@@ -18,7 +18,7 @@
       } else {
         $('.navbar .navbar-brand img').attr('src', "./assets/img/logo-white.png");
       }
-      $nav.toggleClass('scrolled', $(this).scrollTop() > 5);
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 1);
 
     });
   });
