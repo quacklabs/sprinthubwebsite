@@ -26,6 +26,9 @@ body {
 .navbar {
   width: 100%;
 }
+.wrapper{
+  overflow-x: hidden;
+}
 
 .navbar-brand img {
   float: right;
@@ -600,3 +603,32 @@ footer .icon+.icon {
     margin-left: -9em;
   }
 }
+.ellipse {
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+          @media(max-width: 1440px) {
+            .ellipse img {
+              margin-left: 7.2em;
+            }
+          }
+
+          /* @mediascreen and (max-width: 600px) {
+            .ellipse img {
+              margin-left: 7.2em;
+            }
+            } */
+
+
+            @media screen and (max-width: 1024px) {
+              .ellipse img {
+                margin-left: 3em;
+              }
+            }
+
+            @media(max-width: 411px) {
+              .ellipse img {
+                margin-left: 0.3em;
+              }
+            }
