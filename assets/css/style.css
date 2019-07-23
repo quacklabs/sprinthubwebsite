@@ -202,7 +202,6 @@ a.btn-sprinthub {
 .ellipse-bg {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 /* 
@@ -534,32 +533,6 @@ footer .icon+.icon {
 }
 
 
-
-
-
-@media(max-width: 979px) {
-  .work {
-    width: calc(100% - 0.8em);
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-  }
-
-  .ellipse {
-    background-size: contain;
-  }
-}
-
-
-/* smallest screens */
-@media(max-width: 360px) {
-  img.left {
-    margin-left: -7em;
-  }
-
-  .ellipse {
-    background-size: contain;
-  }
-}
 
 
 

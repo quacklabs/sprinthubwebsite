@@ -1,5 +1,5 @@
 /* MOBILE DEVICES */
-@media only screen and(max-width: 412px) {
+@media(max-width: 412px) {
 
   /* TYPOGRAPHY */
   h3.header-title {
@@ -8,6 +8,9 @@
     line-height: 42px;
   }
 
+  .ellipse-bg {
+    background-size: contain;
+  }
 
   .header-text {
     font-weight: 500;
@@ -42,7 +45,7 @@
 
 
 /* TABLETS AND LARGE MOBILE SCREENS */
-@media only screen and(max-width: 769px) {
+@media(max-width: 769px) {
 
   /* NAV BAR */
   .ios {
@@ -160,14 +163,15 @@
   }
 
   .ellipse-bg {
-    padding: 0em 5em;
+    background-size: contain;
+    text-align: center;
   }
 
 }
 
 
 /* VERY SMALL SCREENS */
-@media only screen and(max-width: 321px) {
+@media(max-width: 321px) {
 
   .navbar-nav .nav-item,
   .navbar-nav .nav-item>a {
@@ -180,12 +184,40 @@
 
   .ellipse-bg {
     padding: 0em 0.2em;
+    margin: 0em .5em;
+    background-size: contain;
+  }
+
+  .ellipse-bg img {
     margin: 0em 2em;
   }
 
 }
 
-@media only screen and(max-width: 411px) {
+
+
+
+
+@media(max-width: 375px) {
+
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-item>a {
+    color: var(--sprinthub-blue);
+  }
+
+  .home-banner {
+    padding-top: 6em;
+  }
+
+  .ellipse-bg {
+    padding: 0em 0.2em;
+    /* margin: 0em .5em; */
+    text-align: center;
+  }
+
+}
+
+@media(max-width: 411px) {
   .ellipse img {
     margin-left: 0.3em;
   }
@@ -196,11 +228,12 @@
 
   .ellipse-bg {
     padding: 0em 0.2em;
-    margin: 0em 2em;
+    margin: 0em .4em;
+    text-align: center;
   }
 }
 
-@media only screen and(max-width: 425px) {
+@media(max-width: 425px) {
   .md-hidden {
     display: inline-block;
   }
@@ -213,16 +246,35 @@
     padding-top: 10em;
   }
 
+  .ellipse-bg {
+    padding: 0em 0.2em;
+    margin: 0em .4em;
+    text-align: center;
+  }
 
 }
 
 
 /*WIDE SCREENS */
+
 @media only screen and(max-width: 978px) {
   .left {
     margin-left: -9em;
   }
 }
+
+@media(max-width: 979px) {
+  .work {
+    width: calc(100% - 0.8em);
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+
+  .ellipse {
+    background-size: contain;
+  }
+}
+
 
 .ellipse {
   background-position: center;
@@ -230,19 +282,11 @@
 }
 
 
-@media only screen and (max-width: 1024px) {
-  .ellipse img {
-    margin-left: 3em;
+@media(max-width: 1024px) {
+  .ellipse-bg {
+    padding: 0em 5em;
   }
 }
 
 
-@media only screen and(max-width: 1440px) {
-  .ellipse img {
-    margin-left: 7.2em;
-  }
-
-  img.left {
-    margin-left: -2em;
-  }
-}
+@media(max-width: 1440px) {}
