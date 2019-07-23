@@ -1,0 +1,49 @@
+@media(max-width: 412px) {
+
+
+
+
+  /* .home-banner {
+    padding-top: 6em;
+  } */
+
+
+
+  .btn-margin {
+    margin-top: 5em;
+    color: var(--sprinthub-primary);
+  }
+
+  .ios {
+    margin-top: 0em;
+  }
+
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+}
+
+@media(max-width: 425px) {
+  .md-hidden {
+    display: inline-block;
+  }
+
+
+  .sm-hidden {
+    display: none;
+  }
+}
+
+@media(max-width: 769px) {
+  .ios {
+    margin-top: 2em;
+  }
+
+  .nav-item {
+    margin: 0.5em 0em;
+  }
+}

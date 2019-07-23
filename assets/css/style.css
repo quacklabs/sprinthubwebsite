@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Black.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Roman.otf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Book.otf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Book.otf');
+  font-weight: 100;
+}
+
 :root {
   --sprinthub-blue: #0015AD;
   --sprinthub-primary: #031B4E;
@@ -18,6 +42,21 @@
 body {
   margin: 0;
   top: 0;
+  font-family: 'Avenir';
+}
+
+.sm-hidden {
+  display: inline-block;
+}
+
+.md-hidden {
+  display: none;
+}
+
+h3.header-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
 }
 
 /*
@@ -26,7 +65,8 @@ body {
 .navbar {
   width: 100%;
 }
-.wrapper{
+
+.wrapper {
   overflow-x: hidden;
 }
 
@@ -41,7 +81,9 @@ body {
 
 }
 
-.sticky-top a {
+.sticky-top a,
+.sticky-top button,
+.sticky-top .nav-item>a {
   color: #FFFFFF;
 }
 
@@ -54,6 +96,10 @@ body {
   background-color: #ffffff !important;
   transition: 500ms ease;
 
+}
+
+.sticky-top.scrolled button {
+  color: #333;
 }
 
 .sticky-top.scrolled a {
@@ -131,10 +177,11 @@ a.btn-sprinthub {
   background-repeat: no-repeat;
 }
 
+/* 
 .header-title {
   font-size: 60px;
   margin-top: 100px;
-}
+} */
 
 .text {
   font-size: 24px;
@@ -157,16 +204,16 @@ a.btn-sprinthub {
 }
 
 .service-text {
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #666E7D;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 
 .btn-sprinthub {
-  background: var(--sprinthub-secondary);
+  background-color: var(--sprinthub-secondary) !important;
   border-radius: 4px;
-  color: #0015AD;
+  color: var(--sprinthub-primary);
 }
 
 .btn-sprinthub-white {
@@ -274,7 +321,9 @@ a.btn-sprinthub {
   border: 1px solid transparent;
   border-radius: .375rem;
   background-color: transparent;
+  /* color: #ffffff; */
 }
+
 
 .navbar-collapse {
   flex-basis: 100%;
@@ -445,29 +494,10 @@ footer .icon+.icon {
   margin-left: 1em;
 }
 
-@font-face {
-  font-family: 'Avenir';
-  src: url('../fonts/AvenirLTStd-Black.otf');
-  font-weight: 700;
-}
 
-@font-face {
-  font-family: 'Avenir';
-  src: url('../fonts/AvenirLTStd-Roman.otf');
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Avenir';
-  src: url('../fonts/AvenirLTStd-Book.otf');
-  font-weight: 100;
-}
 
 .ios {
   margin-top: 60px;
-}
-
-.android {}
 }
 
 .web {
@@ -476,11 +506,6 @@ footer .icon+.icon {
 }
 
 
-@font-face {
-  font-family: 'Avenir';
-  src: url('../fonts/AvenirLTStd-Book.otf');
-  font-weight: 100;
-}
 
 
 @media (max-width: 769px) {
@@ -603,32 +628,33 @@ footer .icon+.icon {
     margin-left: -9em;
   }
 }
+
 .ellipse {
-            background-position: center;
-            background-repeat: no-repeat;
-          }
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-          @media(max-width: 1440px) {
-            .ellipse img {
-              margin-left: 7.2em;
-            }
-          }
+@media(max-width: 1440px) {
+  .ellipse img {
+    margin-left: 7.2em;
+  }
+}
 
-          /* @mediascreen and (max-width: 600px) {
+/* @mediascreen and (max-width: 600px) {
             .ellipse img {
               margin-left: 7.2em;
             }
             } */
 
 
-            @media screen and (max-width: 1024px) {
-              .ellipse img {
-                margin-left: 3em;
-              }
-            }
+@media screen and (max-width: 1024px) {
+  .ellipse img {
+    margin-left: 3em;
+  }
+}
 
-            @media(max-width: 411px) {
-              .ellipse img {
-                margin-left: 0.3em;
-              }
-            }
+@media(max-width: 411px) {
+  .ellipse img {
+    margin-left: 0.3em;
+  }
+}
