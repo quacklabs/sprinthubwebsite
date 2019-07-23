@@ -192,6 +192,7 @@
     margin: 0em 2em;
   }
 
+
 }
 
 
@@ -250,6 +251,10 @@
     padding: 0em 0.2em;
     margin: 0em .4em;
     text-align: center;
+  }
+
+  .ios {
+    margin-top: 0px;
   }
 
 }
