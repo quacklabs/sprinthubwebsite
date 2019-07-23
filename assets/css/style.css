@@ -213,14 +213,6 @@ a.btn-sprinthub {
   font-size: 24px;
 }
 
-.section-title {
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 56px;
-  /* Primary thing */
-  color: var(--sprinthub-primary);
-}
-
 .main {
   max-width: 100%;
 }

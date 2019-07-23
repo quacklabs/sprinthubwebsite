@@ -39,10 +39,6 @@
   .sm-hidden {
     display: none;
   }
-
-  .mobile-center {
-    text-align: center;
-  }
 }
 
 
@@ -171,14 +167,6 @@
     text-align: center;
   }
 
-  .section-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.0025em;
-  }
-
-
 }
 
 
@@ -204,22 +192,11 @@
     margin: 0em 2em;
   }
 
-  .section-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.0025em;
-  }
-
-  .mobile-center {
-    text-align: center;
-  }
-
-  .ios {
-    margin-top: 0em;
-  }
-
 }
+
+
+
+
 
 @media(max-width: 375px) {
 
@@ -238,13 +215,6 @@
     text-align: center;
   }
 
-  .mobile-center {
-    text-align: center;
-  }
-
-  .ios {
-    margin-top: 0em;
-  }
 }
 
 @media(max-width: 411px) {
@@ -260,17 +230,6 @@
     padding: 0em 0.2em;
     margin: 0em .4em;
     text-align: center;
-  }
-
-  .section-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.0025em;
-  }
-
-  .ios {
-    margin-top: 0em;
   }
 }
 
@@ -291,21 +250,6 @@
     padding: 0em 0.2em;
     margin: 0em .4em;
     text-align: center;
-  }
-
-  .section-title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.0025em;
-  }
-
-  .mobile-center {
-    text-align: center;
-  }
-
-  .ios {
-    margin-top: 0em;
   }
 
 }
