@@ -31,18 +31,15 @@
     nav: true,
     dots: true,
     autoplay: true,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      769: {
+        items: 3
+      },
+    }
   })
-  // Home Slider
-  $(function () {
-    $('#home-carousel').owlCarousel({
-      items: 1,
-      responsive: {
-        0: {
-          items: 3
-        },
-      }
-    });
-  });
 
 })();

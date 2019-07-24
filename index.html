@@ -148,8 +148,7 @@
 		<h2 class="dark-blue-title">Services suited for your business </h2>
 		<p class="service-text">We are a complete mobile app development company ready to help you<br> take your business to the next level.</p>
 
-		<!-- Owl carousel not stable -->
-		<div id="home-carousel" class="home-carousel owl-carousel owl-theme d-md-block d-none">
+		<div id="home-carousel" class="home-carousel owl-carousel owl-theme">
 			<div class="item">
 				<img class="img-fluid" src="./assets/img/home-slider1.png" alt="Slider 1">
 				<div class="carousel-content">
@@ -180,24 +179,9 @@
 					<p>Developing for the IOS while <br>adhering to Apple’s guidelines <br>and best principles.</p>
 				</div>
 			</div>
-			<!-- !BUG: Owl carousel issue with nav and dots, don't uncomment yet -->
-			<!-- <div class="owl-nav"></div>  -->
-			<div class="owl-dots"></div>
-			<script type="text/javascript">
-				jQuery(function ($) {
-					var carousel = $("#home-carousel");
-					carousel.owlCarousel({
-						stopOnHover: true,
-						pagination: true,
-						autoPlay: false,
-						navigation: false,
-						paginationSpeed: 500,
-						singleItem: true,
-					});
-					carousel.trigger('owl.goTo', 2)
-				});
-			</script>
 		</div>
+		<!-- <div class="owl-nav"></div>
+		<div class="owl-dots"></div> -->
 	</section>
 
 	<!-- Small talk -->
