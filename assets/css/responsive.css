@@ -23,6 +23,8 @@
     color: #FFFFFF;
   }
 
+
+
   .btn-margin {
     margin-top: 5em;
     color: var(--sprinthub-primary);
@@ -125,7 +127,8 @@
 
 
   /* TYPOGRAPHY */
-  h3.header-title {
+  h3.header-title,
+  .card-title {
     font-size: 36px;
     font-weight: 900;
     line-height: 42px;
@@ -144,7 +147,7 @@
   }
 
   .home-banner {
-    padding-top: 17em;
+    padding-top: 12em;
   }
 
   .work {
@@ -165,6 +168,10 @@
   .ellipse-bg {
     background-size: contain;
     text-align: center;
+  }
+
+  .sm-hidden {
+    display: none;
   }
 
 }
@@ -192,6 +199,14 @@
     margin: 0em 2em;
   }
 
+  .tick {
+    height: 10px;
+    width: 10px;
+  }
+
+  .tick p {
+    font-size: 12px;
+  }
 
 }
 
