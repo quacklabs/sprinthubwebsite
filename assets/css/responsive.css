@@ -129,9 +129,10 @@
   /* TYPOGRAPHY */
   h3.header-title,
   .card-title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 42px;
+    color: #031B4E;
   }
 
   /* HEADER */
@@ -172,6 +173,10 @@
 
   .sm-hidden {
     display: none;
+  }
+
+  .nav-item {
+    margin: 0.5em 0.1rem;
   }
 
 }
@@ -231,6 +236,14 @@
     text-align: center;
   }
 
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
 }
 
 @media(max-width: 411px) {
@@ -246,6 +259,14 @@
     padding: 0em 0.2em;
     margin: 0em .4em;
     text-align: center;
+  }
+
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .sm-hidden {
+    display: none;
   }
 }
 
@@ -277,7 +298,7 @@
 
 /*WIDE SCREENS */
 
-@media only screen and(max-width: 978px) {
+@media(max-width: 978px) {
   .left {
     margin-left: -9em;
   }
@@ -305,6 +326,10 @@
 @media(max-width: 1024px) {
   .ellipse-bg {
     padding: 0em 5em;
+  }
+
+  .nav-item {
+    margin: 0 0.1em;
   }
 }
 

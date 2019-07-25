@@ -68,6 +68,10 @@ html {
   width: 100%;
 }
 
+a {
+  cursor: pointer !important;
+}
+
 section,
 header {
   width: 100%;
@@ -284,6 +288,7 @@ a.btn-sprinthub {
 .header-title {
   font-size: 60px;
   margin-top: 100px;
+  color: #FFFFFF !important;
 }
 
 .service-text {
@@ -709,8 +714,11 @@ footer .icon+.icon {
   margin-top: 60px;
 }
 
+<<<<<<< HEAD
 .android {}
 
+=======
+>>>>>>> finished blog body
 .web {
   margin-top: 40px;
   margin-left: 100px;
@@ -734,6 +742,16 @@ footer .icon+.icon {
   padding: 20px;
 }
 
+.blog-banner {
+  background: url(../img/blog-header-bg.png) no-repeat;
+  background-size: cover;
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 123px;
+  color: #FFFFFF;
+  min-height: 400px;
+}
+
 .card-shadow {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3),
     0px 6px 12px rgba(50, 50, 93, 0.0025);
@@ -747,6 +765,7 @@ footer .icon+.icon {
     margin-left: 100px;
   }
 }
+<<<<<<< HEAD
 
 @media(max-width: 979px) {
   .work {
@@ -756,6 +775,88 @@ footer .icon+.icon {
   }
 
   /* @mediascreen and (max-width: 600px) {
+=======
+
+@media(max-width: 979px) {
+  .work {
+    width: calc(100% - 0.8em);
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+}
+
+
+/* BLOG STYLES */
+.category-label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #031B4E;
+}
+
+
+.author {
+  display: inline-flex;
+}
+
+.author img {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+}
+
+span>a.link {
+  margin-top: .5em;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.link {
+  color: #2D3A93;
+}
+
+.blog-snippet-preview {
+  max-height: 236px;
+}
+
+.blog-snippets {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+
+
+.blog-item {}
+
+.img-fit {
+  max-width: 100%;
+  height: max-content;
+}
+
+.borderless {
+  border: 0px !important;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.ml {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.top-line {}
+
+
+/* @mediascreen and (max-width: 600px) {
+>>>>>>> finished blog body
             .ellipse img {
               margin-left: 7.2em;
             }
