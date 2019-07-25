@@ -24,14 +24,16 @@
   });
 
   // General Carousel
-  $('.owl-carousel').owlCarousel({
+  var generalCarouselData = {
     loop: true,
     margin: 10,
     center: true,
-    nav: true,
-    dots: true,
     autoplay: true,
     autoplayHoverPause: true,
+  };
+
+  var serviceCarouselData = Object.assign({
+    navContainer: '.service-carousel-layout .owl-nav',
     responsive: {
       0: {
         items: 1
@@ -40,6 +42,16 @@
         items: 3
       },
     }
-  })
+  }, generalCarouselData);
+
+  var testimontyCarouselData = Object.assign({
+    items: 1
+  }, generalCarouselData);
+
+  // Service Carousel
+  $('#serviceCarousel').owlCarousel(serviceCarouselData);
+
+  // Testimony Carousel
+  $('#testimonyCarousel').owlCarousel(testimontyCarouselData);
 
 })();
