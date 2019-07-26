@@ -41,6 +41,15 @@
   .sm-hidden {
     display: none;
   }
+
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
 }
 
 
@@ -129,9 +138,10 @@
   /* TYPOGRAPHY */
   h3.header-title,
   .card-title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 42px;
+    color: #031B4E;
   }
 
   /* HEADER */
@@ -174,6 +184,19 @@
     display: none;
   }
 
+  .nav-item {
+    margin: 0.5em 0.1rem;
+  }
+
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
+
 }
 
 
@@ -208,6 +231,19 @@
     font-size: 12px;
   }
 
+  .sub-group {
+    width: calc(100%);
+
+  }
+
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
 }
 
 
@@ -231,6 +267,30 @@
     text-align: center;
   }
 
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+
+  .sub-group {
+    width: calc(100%);
+
+  }
+
+
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
+
 }
 
 @media(max-width: 411px) {
@@ -247,11 +307,39 @@
     margin: 0em .4em;
     text-align: center;
   }
+
+  .sub-group {
+    width: calc(100%);
+
+  }
+
+  .md-hidden {
+    display: inline-block;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
 }
 
 @media(max-width: 425px) {
   .md-hidden {
     display: inline-block;
+  }
+
+
+  .sub-group {
+    width: calc(100%);
+
   }
 
   .sm-hidden {
@@ -272,12 +360,20 @@
     margin-top: 0px;
   }
 
+  h1.content-header {
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  }
+
 }
 
 
 /*WIDE SCREENS */
 
-@media only screen and(max-width: 978px) {
+@media(max-width: 978px) {
   .left {
     margin-left: -9em;
   }
@@ -305,6 +401,10 @@
 @media(max-width: 1024px) {
   .ellipse-bg {
     padding: 0em 5em;
+  }
+
+  .nav-item {
+    margin: 0 0.1em;
   }
 }
 
