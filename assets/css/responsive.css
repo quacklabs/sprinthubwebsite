@@ -213,6 +213,11 @@
     font-size: 12px;
   }
 
+  .sub-group {
+    width: calc(100%);
+
+  }
+
 }
 
 
@@ -244,6 +249,12 @@
     display: none;
   }
 
+
+  .sub-group {
+    width: calc(100%);
+
+  }
+
 }
 
 @media(max-width: 411px) {
@@ -261,6 +272,11 @@
     text-align: center;
   }
 
+  .sub-group {
+    width: calc(100%);
+
+  }
+
   .md-hidden {
     display: inline-block;
   }
@@ -273,6 +289,12 @@
 @media(max-width: 425px) {
   .md-hidden {
     display: inline-block;
+  }
+
+
+  .sub-group {
+    width: calc(100%);
+
   }
 
   .sm-hidden {
