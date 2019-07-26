@@ -180,7 +180,8 @@ h3.header-title {
 }
 
 .sticky-top a,
-.sticky-top button {
+.sticky-top button,
+.navbar-nav .nav-item a {
   color: #FFFFFF;
 }
 
@@ -266,14 +267,13 @@ a.btn-sprinthub {
   align-items: center;
 }
 
-/* 
 .navbar-nav {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-} */
+}
 
 .home-banner {
   min-height: 680px;
@@ -714,11 +714,6 @@ footer .icon+.icon {
   margin-top: 60px;
 }
 
-<<<<<<< HEAD
-.android {}
-
-=======
->>>>>>> finished blog body
 .web {
   margin-top: 40px;
   margin-left: 100px;
@@ -765,17 +760,6 @@ footer .icon+.icon {
     margin-left: 100px;
   }
 }
-<<<<<<< HEAD
-
-@media(max-width: 979px) {
-  .work {
-    width: calc(100% - 0.8em);
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-  }
-
-  /* @mediascreen and (max-width: 600px) {
-=======
 
 @media(max-width: 979px) {
   .work {
@@ -831,45 +815,6 @@ span>a.link {
   grid-template-rows: auto auto auto;
 }
 
-.pagination {
-  margin-right: auto;
-  margin-left: auto;
-  display: inline-flex;
-}
-
-.pagination>.page-item>.page-link {
-  border: 0;
-  background: none;
-}
-
-.input-large {
-  background: #F6F7FC;
-  /* secondary text */
-  border: 1px solid #666E7D;
-  box-sizing: border-box;
-  border-radius: 3px 0px 0px 3px;
-  padding-top: 18px;
-  padding-left: 55px;
-}
-
-.sub-group {
-  width: calc(63%);
-
-}
-
-.pager {
-  list-style: none;
-  display: inline-flex;
-}
-
-.input-row {
-  width: calc(80%);
-}
-
-.search-result {
-  max-height: 200px !important;
-  display: inline-flex;
-}
 
 .blog-item {}
 
@@ -894,56 +839,7 @@ span>a.link {
 .top-line {}
 
 
-/* BLOG NAVBAR */
-
-.blog-nav {
-  background-color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-}
-
-.sub-nav {
-  background-color: #FFFFFF;
-  display: flex;
-}
-
-.sub-nav .navbar-nav {
-  display: inline-flex;
-  flex-direction: row;
-}
-
-.sub-nav a {
-  color: #666E7D;
-  font-size: 16px;
-  line-height: 22px;
-  margin-left: 27px;
-  margin-right: 27px;
-}
-
-.sub-nav a:active {
-  color: #0015AD;
-}
-
-ul.no-bullet,
-ul.no-gutters {
-  list-style: none;
-  padding-inline-start: 0;
-}
-
-.affix {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  opacity: 1;
-}
-
-.affix-top {
-  position: static;
-  opacity: 0.8;
-}
-
 /* @mediascreen and (max-width: 600px) {
->>>>>>> finished blog body
             .ellipse img {
               margin-left: 7.2em;
             }
