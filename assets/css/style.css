@@ -829,8 +829,15 @@ ul.no-gutters {
   opacity: 0.8;
 }
 
-/* @mediascreen and (max-width: 600px) {
-            .ellipse img {
-              margin-left: 7.2em;
-            }
-            } */
+h1.content-header {
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+
+.tags li a {
+  color: var(--sprinthub-primary);
+}
