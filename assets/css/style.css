@@ -841,7 +841,6 @@ footer .icon+.icon {
 
   .sub-group {
     width: calc(63%);
-    <<<<<<< HEAD
   }
 
   .pager {
@@ -1005,4 +1004,24 @@ ul.no-gutters {
   top: 0;
   width: 100%;
   opacity: 1;
+  <<<<<<< HEAD=======
+}
+
+.affix-top {
+  position: static;
+  opacity: 0.8;
+}
+
+h1.content-header {
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+
+.tags li a {
+  color: var(--sprinthub-primary);
+  >>>>>>>blog
 }
