@@ -362,6 +362,59 @@
     margin-top: 0px;
   }
 
+.services-title{
+  width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 0px;
+    line-height: 22px;
+}
+
+.ios-service-image{
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    min-height: 200px;
+}
+.ui-ux-service-image{
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    min-height: 200px;
+}
+.product-service-image{
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    min-height: 200px;
+}
+.android-service-image{
+  border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    min-height: 200px;
+}
+.web-service-image{
+  border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    min-height: 200px;
+}
+.quality-service-image{
+  border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    min-height: 200px;
+}
+.container-scroll {
+  margin-top: 150px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: none;
+  
+}
+
 .cta{
   padding: 20px;
 }
