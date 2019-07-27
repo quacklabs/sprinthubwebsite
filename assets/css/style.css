@@ -17,12 +17,23 @@
 }
 
 :root {
+  /**
+  Using material design color rules
+   https://material.io/resources/color/ 
+   **/
+  /* Colors */
+  --primary-color: #031B4E;
+  --primary-color-2: #2D3A93;
+  --secondary-color: #F4C94E;
+  --text-dark: #031B4E;
+  --text-light: #666E7D;
   --sprinthub-blue: #0015AD;
-  --sprinthub-primary: #031B4E;
-  --sprinthub-secondary: #F4C94E;
   --sprinthub-yellow: #F2BC22;
-  --sprintblue: #0015AD;
-  --sprinthub-primary-2: #2D3A93;
+  /* Colors */
+
+  /* Other layouts */
+  --card-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(50, 50, 93, 0.0025);
+  /* Other layouts */
 }
 
 /* General scrollbar */
@@ -38,21 +49,43 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--sprinthub-primary);
+  background-color: var(--primary-color);
   border-radius: 0.5em
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--sprinthub-secondary);
+  background-color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--text-light) !important;
+}
+
+.text-dark {
+  color: var(--text-dark) !important;
+}
+
+.bg-muted {
+  background-color: #F5F8FA !important;
+}
+
+.bg-blue {
+  background-color: var(--sprinthub-blue);
+  color: #fff !important;
+}
+
+.bg-yellow {
+  background-color: var(--sprinthub-yellow);
+  color: #000
 }
 
 .bg-primary {
-  background-color: var(--sprinthub-primary) !important;
+  background-color: var(--primary-color) !important;
   color: #FFF;
 }
 
 .bg-secondary {
-  background-color: var(--sprinthub-secondary) !important;
+  background-color: var(--secondary-color) !important;
   color: #212529;
 }
 
@@ -60,12 +93,14 @@
   background-color: #E5E5E5;
 }
 
-body,
-html {
+[class*=col-] {
+  margin-bottom: 2em
+}
+
+body {
   margin: 0;
-  top: 0;
   font-family: 'Avenir';
-  width: 100%;
+  color: var(--text-dark);
 }
 
 a {
@@ -75,6 +110,7 @@ a {
 section,
 header {
   width: 100%;
+  min-height: 25vh;
 }
 
 .sm-hidden {
@@ -143,7 +179,7 @@ h3.header-title {
   height: 56px;
   background: var(--sprinthub-yellow);
   border-radius: 4px;
-  color: var(--sprinthub-primary-2) !important;
+  color: var(--primary-color-2) !important;
   padding: 18px 0px
 }
 
@@ -169,7 +205,7 @@ h3.header-title {
   padding: .5rem 3rem;
   margin-left: 10px;
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -302,9 +338,9 @@ a.btn-sprinthub {
 }
 
 .btn-sprinthub {
-  background-color: var(--sprinthub-secondary) !important;
+  background-color: var(--secondary-color) !important;
   border-radius: 4px;
-  color: var(--sprinthub-primary);
+  color: var(--primary-color);
 }
 
 .service-small-head {
@@ -320,7 +356,7 @@ a.btn-sprinthub {
 
 
 .btn-sprinthub {
-  background: var(--sprinthub-secondary);
+  background: var(--secondary-color);
   border-radius: 4px;
   color: #0015AD;
 }
@@ -354,7 +390,7 @@ a.btn-sprinthub {
   justify-content: center;
   align-items: center;
   background-color: #C0C5E8;
-  color: var(--sprinthub-primary) !important;
+  color: var(--primary-color) !important;
   width: 1em;
   height: 1em;
   font-size: 1.5em;
@@ -459,13 +495,13 @@ a.btn-sprinthub {
 }
 
 .owl-dots .owl-dot>span {
-  border: 1px solid var(--sprinthub-primary-2);
+  border: 1px solid var(--primary-color-2);
   background-color: transparent !important;
   padding: 0.4em
 }
 
 .owl-dots .owl-dot.active>span {
-  background-color: var(--sprinthub-primary-2) !important;
+  background-color: var(--primary-color-2) !important;
 }
 
 /* Service Carousel */
@@ -536,7 +572,7 @@ a.btn-sprinthub {
   right: 0;
   position: absolute;
   transform: translate(50%, -50%);
-  background-color: var(--sprinthub-secondary);
+  background-color: var(--secondary-color);
 }
 
 .service-carousel-layout .carousel-content {
@@ -577,21 +613,57 @@ a.btn-sprinthub {
 .testimony-carousel-layout .carousel-content::before {
   content: '';
   display: block;
-  background: linear-gradient(transparent, var(--sprinthub-primary-2))
+  background: linear-gradient(transparent, var(--primary-color-2))
 }
 
 .testimony-carousel-layout .carousel-content {
   font-size: 24px;
   text-align: center;
   color: #fff;
-  background-color: var(--sprinthub-primary-2);
+  background-color: var(--primary-color-2);
   padding: 1em
+}
+
+/* Presskit Page */
+.presskit-page .card {
+  min-height: 15em;
+  box-shadow: var(--card-shadow);
+}
+
+.presskit-page .card a,
+.presskit-page a.card {
+  text-decoration: none
+}
+
+.presskit-page .card-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 5em;
+}
+
+.presskit-page .card-body img {
+  width: 100%;
 }
 
 .presskit-page .card-footer {
   display: flex;
-  justify-content: space-around
+  padding: 1.25em;
+  font-size: 18px;
+  justify-content: space-around;
+  color: var(--text-dark) !important;
 }
+
+.presskit-page .download-btn {
+  padding: 0.75em;
+  min-width: 17.75em;
+  color: var(--primary-color-2);
+  border: 1px solid var(--primary-color-2);
+  border-radius: 4px;
+}
+
+/* Presskit Page */
 
 @media (max-width: 769px) {
 
@@ -665,16 +737,22 @@ a.btn-sprinthub {
 }
 
 footer {
-  /* color: #C0C5E8 !important; */
+  color: #C0C5E8;
+  background-color: var(--primary-color);
+  padding: 5rem 1rem;
+}
+
+footer h5 {
+  color: #fff;
 }
 
 footer a {
   color: #C0C5E8 !important;
+  text-decoration: none;
 }
 
 footer a:hover {
   color: #fff !important;
-  text-decoration: none;
 }
 
 footer .nav {
@@ -920,8 +998,6 @@ ul.no-gutters {
   opacity: 1;
 }
 
-=======
-}
 
 .pager {
   list-style: none;
@@ -1001,7 +1077,6 @@ ul.no-gutters {
   top: 0;
   width: 100%;
   opacity: 1;
-  <<<<<<< HEAD=======
 }
 
 .affix-top {
@@ -1019,7 +1094,7 @@ h1.content-header {
 
 
 .tags li a {
-  color: var(--sprinthub-primary);
+  color: var(--primary-color);
 }
 
 .tags li {
