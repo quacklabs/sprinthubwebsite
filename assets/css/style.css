@@ -365,7 +365,7 @@ h3.header-title {
   }
 
 
-  .icon.fa {
+  .icon.fab {
   	display: inline-flex;
   	justify-content: center;
   	align-items: center;
@@ -378,7 +378,7 @@ h3.header-title {
   	padding: 1em;
   }
 
-  .icon.fa:hover {
+  .icon.fab:hover {
   	color: #fff !important;
   }
 
@@ -756,11 +756,16 @@ h3.header-title {
 .blog-banner {
 	background: url(../img/blog-header-bg.png) no-repeat;
 	background-size: cover;
+	box-shadow: inset 0 0 0 2000px #00287157;
 	font-weight: 800;
 	font-size: 90px;
 	line-height: 123px;
 	color: #FFFFFF;
 	min-height: 530px;
+	border-radius: 0px !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #00154D;
 }
 
 .card-shadow {
@@ -863,12 +868,11 @@ a.page-link {
 
 .input-large {
 	background: #F6F7FC;
-	/* secondary text */
-	border: 1px solid #666E7D;
-	box-sizing: border-box;
-	border-radius: 3px 0px 0px 3px;
-	padding-top: 18px;
-	padding-left: 55px;
+    border: 1px solid #666E7D;
+    box-sizing: border-box;
+    border-radius: 3px 0px 0px 3px;
+    padding: 10px;
+    height: 56px;
 }
 
 .sub-group {
@@ -1052,7 +1056,29 @@ h1.content-header {
 
 
 .tags li a {
-	color: var(--sprinthub-primary);
+    color: var(--sprinthub-primary);
+    font-weight: 500;
+    text-decoration: none;
+}
+.sidebar-content{
+	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 6px 12px rgba(50, 50, 93, 0.0025);
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background: white;
+}
+.blog-content{
+	color:#666E7D;
+	padding:10px 30px;
+}
+.btn-author{
+	color: #2d3a93;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #2d3a93;
+    font-weight: 600;
+}
+.author-box{
+	padding:10px 30px;
 }
 
 .tags li {
