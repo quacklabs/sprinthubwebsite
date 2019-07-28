@@ -25,6 +25,7 @@
 
   // General Carousel
   var generalCarouselData = {
+    nav: true,
     loop: true,
     margin: 10,
     center: true,
@@ -48,6 +49,7 @@
   }, generalCarouselData);
 
   var testimontyCarouselData = Object.assign({
+    navContainer: '.testimony-carousel-layout .owl-nav',
     items: 1
   }, generalCarouselData);
 
