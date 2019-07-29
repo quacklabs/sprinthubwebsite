@@ -333,6 +333,7 @@ h3.header-title {
   	background: var(--sprinthub-secondary);
   	border-radius: 4px;
   	color: #0015AD;
+  	padding: 10px 30px !important;
   }
 
   .btn-sprinthub-white {
@@ -1153,10 +1154,12 @@ h1.content-header {
 	padding: 10px;
 }
 .container-scroll {
-	margin-top: 150px;
-	position: relative;
-	width: 24px;
-	height: 24px;
+	display: block;
+    margin: auto;
+    position: relative;
+    width: 24px;
+    margin-top: 180px;
+    height: 24px;
 
 }
 
