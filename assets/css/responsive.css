@@ -484,8 +484,18 @@
   .ellipse {
     background-size: contain;
   }
+
+  .nav-link {
+    margin-right: 10px;
+  }
 }
 
+
+@media(max-width: 866px) {
+  .nav-link {
+    margin-right: 5px;
+  }
+}
 
 .ellipse {
   background-position: center;
