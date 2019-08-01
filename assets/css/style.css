@@ -1299,3 +1299,12 @@ h1.content-header {
 .iti {
 	display: inherit;
 }
+
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+	border: 1px solid #0015AD;
+	box-sizing: border-box;
+	border-radius: 4px;
+	height: 45px;
+}
