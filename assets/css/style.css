@@ -1402,3 +1402,10 @@ textarea.form-control {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
+.datepicker {
+	background: url(../img/calendar-icon.png) no-repeat scroll calc(100% - 10px) 8px;
+	backface-visibility: visible;
+
+	/* padding-left: 30px; */
+}
