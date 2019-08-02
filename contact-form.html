@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/js-datepicker.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="./assets/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -214,7 +215,7 @@
                   </div>
                 </div>
               </div>
-
+              <!-- SERVICE -->
               <div class="form-group row">
                 <label for="serviceType" class="col-sm-3 col-form-label">Type of Service
                   <p class="text-muted">What best describes the service you want</p>
@@ -231,7 +232,7 @@
                 </div>
               </div>
 
-
+              <!-- BUDGET -->
               <div class="form-group row">
                 <label for="budget" class="col-sm-3">Budget <p class="text-muted">How much is your budget for the project</p></label>
 
@@ -248,6 +249,8 @@
                 </div>
               </div>
 
+
+              <!-- SUMMARY -->
               <div class="form-group row">
                 <label for="summary" class="col-sm-3">Project Summary</label>
                 <div class="col-sm-6">
@@ -257,14 +260,14 @@
                   <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
-
+              <!-- DATE -->
               <div class="form-group row">
                 <label for="start" class="col-sm-3">Starting Point
                   <p class="text-muted">When do you plan to start this project</p>
                 </label>
 
                 <div class="col-sm-4">
-                  <input type="text" name="Date" class="form-control" placeholder="01-January-2019" required>
+                  <input type="text" name="Date" class="form-control start datepicker" placeholder="01-January-2019" required>
                   <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
@@ -273,16 +276,19 @@
               <div class="form-group row">
                 <label for="end" class="col-sm-3">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
                 <div class="col-sm-4">
-                  <input type="text" name="Date1" class="form-control" placeholder="01-January-2019" required>
+                  <input type="text" name="Date1" class="form-control end datepicker" placeholder="01-January-2019" required>
                   <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
+
+              <!-- INPUT ENDS -->
 
               <hr>
               <p>*N.B : A copy of a signed NDA will be sent to you.</p>
               <div class="row mt-5 mb-5">
                 <div class="container text-center">
                   <input id="submit" type="submit" class="btn btn-round btn-sprinthub-blue btn-large" value="Send" style="color: #FFFFFF;">
+
                 </div>
               </div>
             </form>
@@ -355,6 +361,7 @@
   <script src="./assets/js/intlTelInput-jquery.js"></script>
   <script src="./assets/js/salesiqintegration.js"></script>
   <script src="./assets/js/validation.js"></script>
+  <script src="./assets/js/datepicker.js" type="text/javascript"></script>
 
   <script>
     $(function () {
@@ -376,6 +383,37 @@
       }));
 
       init()
+
+
+      const start = datepicker('.start', {
+        id: 1,
+        onSelect: (instance, date) => {
+          // Both instances will be set because they are linked by `id`.
+          instance.setMin(date)
+        },
+        minDate: new Date(),
+        formatter: (input, date, instance) => {
+          const value = formatDate(date.toLocaleDateString())
+          input.value = value // => '1/1/2099'
+        }
+      })
+
+      const end = datepicker('.end', {
+        id: 1,
+        onSelect: (instance, date) => {
+          // Both instances will be set because they are linked by `id`.
+          instance.setMax(date)
+        },
+        minDate: new Date(),
+        formatter: (input, date, instance) => {
+          const value = formatDate(date.toLocaleDateString())
+          input.value = value // => '1/1/2099'
+        }
+      })
+
+
+
+
 
 
 
