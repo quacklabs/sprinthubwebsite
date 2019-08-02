@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/js-datepicker.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="./assets/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -266,8 +267,7 @@
                 </label>
 
                 <div class="col-sm-4">
-                  <input type="text" name="Date" class="form-control" placeholder="01-January-2019" required>
-                  <span class="datepicker"><i class="fa fa-calender"></i></span>
+                  <input type="text" name="Date" class="form-control datepicker" placeholder="01-January-2019" required>
                   <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
@@ -361,6 +361,7 @@
   <script src="./assets/js/intlTelInput-jquery.js"></script>
   <script src="./assets/js/salesiqintegration.js"></script>
   <script src="./assets/js/validation.js"></script>
+  <script src="./assets/js/datepicker.js" type="text/javascript"></script>
 
   <script>
     $(function () {
@@ -382,6 +383,14 @@
       }));
 
       init()
+
+      const picker = datepicker('.datepicker', {
+        minDate: new Date(),
+        formatter: (input, date, instance) => {
+          const value = date.toLocaleDateString()
+          input.value = value // => '1/1/2099'
+        }
+      });
 
 
 
