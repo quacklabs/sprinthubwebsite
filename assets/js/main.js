@@ -54,4 +54,23 @@
   // Testimony Carousel
   $('#testimonyCarousel').owlCarousel(testimontyCarouselData);
 
+
 })();
+var formatDate = (date) => {
+  var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
+
+  var splitDate = date.split("/");
+  console.log(splitDate);
+
+
+  var day = splitDate[0]
+  var monthIndex = Number(splitDate[1])
+  var year = splitDate[2];
+
+  return day + '-' + monthNames[monthIndex] + '-' + year;
+}

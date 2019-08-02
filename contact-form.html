@@ -267,7 +267,7 @@
                 </label>
 
                 <div class="col-sm-4">
-                  <input type="text" name="Date" class="form-control datepicker" placeholder="01-January-2019" required>
+                  <input type="text" name="Date" class="form-control start datepicker" placeholder="01-January-2019" required>
                   <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
@@ -276,7 +276,7 @@
               <div class="form-group row">
                 <label for="end" class="col-sm-3">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
                 <div class="col-sm-4">
-                  <input type="text" name="Date1" class="form-control" placeholder="01-January-2019" required>
+                  <input type="text" name="Date1" class="form-control end datepicker" placeholder="01-January-2019" required>
                   <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
@@ -384,13 +384,36 @@
 
       init()
 
-      const picker = datepicker('.datepicker', {
+
+      const start = datepicker('.start', {
+        id: 1,
+        onSelect: (instance, date) => {
+          // Both instances will be set because they are linked by `id`.
+          instance.setMin(date)
+        },
         minDate: new Date(),
         formatter: (input, date, instance) => {
-          const value = date.toLocaleDateString()
+          const value = formatDate(date.toLocaleDateString())
           input.value = value // => '1/1/2099'
         }
-      });
+      })
+
+      const end = datepicker('.end', {
+        id: 1,
+        onSelect: (instance, date) => {
+          // Both instances will be set because they are linked by `id`.
+          instance.setMax(date)
+        },
+        minDate: new Date(),
+        formatter: (input, date, instance) => {
+          const value = formatDate(date.toLocaleDateString())
+          input.value = value // => '1/1/2099'
+        }
+      })
+
+
+
+
 
 
 
