@@ -91,7 +91,7 @@
       <div class="row">
 
         <div class="col-md-12">
-          <div class="card mb-3">
+          <div class="card mb-5">
             <!-- <div class="card-body">Business Details</div> -->
 
 
@@ -104,8 +104,8 @@
 
               </div>
               <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Full Name</label>
-                <div class="col-sm-10">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Full Name</label>
+                <div class="col-sm-9">
                   <div class="row">
                     <div class="col-md-6 col-sm-4 mb-2">
                       <input type="text" class="col form-control" name="Name_First" placeholder="First Name" required>
@@ -123,8 +123,8 @@
 
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-2 col-form-label">Email <em>*</em></label>
-                <div class="col-sm-6">
+                <label for="Email" class="col-sm-3 col-form-label">Email <em>*</em></label>
+                <div class="col-sm-5">
                   <input name="Email" type="email" class="form-control" placeholder="name@example.com" required>
                   <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
@@ -132,85 +132,94 @@
 
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-2 col-form-label">Phone Number <em>*</em></label>
-                <div class="col-sm-6">
-                  <input name="Email" type="email" class="form-control" placeholder="name@example.com" required>
-                  <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                </div>
-              </div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-              <div class="form-group row"></div>
-
-
-
-
-              <div class="row mt-3">
-                <div class="col-md-6 mb-2">
-
-
-                </div>
-
-                <div class="col-md-6 mb-2">
-                  <label for="phone">Phone <em>*</em></label>
+                <label for="Email" class="col-sm-3 col-form-label">Phone Number <em>*</em></label>
+                <div class="col-sm-5">
                   <input type="hidden" name="PhoneNumber_countrycodeval" id="dialCode" value="" />
                   <input name="PhoneNumber_countrycode" id="phone" type="text" class="form-control" required>
                   <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
 
-              <div class="row mt-3">
-                <div class="col-md-6 mb-2">
-                  <label for="Email">Business Name <em>*</em></label>
+              <div class="form-group row">
+                <label for="Email" class="col-sm-3 col-form-label">Business Name<em>*</em></label>
+                <div class="col-sm-6">
                   <input name="SingleLine" type="text" class="form-control" required>
                   <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
+              </div>
 
-                <div class="col-md-6 mb-2">
-                  <label for="Email">Services <em>*</em></label>
+              <div class="form-group row mt-5">
+                <div class="col-12">
+                  <h5 class="txt-primary">Project Details</h5>
+                  <hr>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="Email" class="col-sm-3 col-form-label">Service<em>*</em>
+                  <p class="text-muted">What service are you interested in</p>
+                </label>
+                <div class="col-sm-8">
                   <div class="row">
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_1" name="Checkbox1" checktype="c1" value="IOS" />&nbsp;
-                      <label for="ios">iOS</label>
+                    <div class="col">
+                      <label class="check">iOS
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <!-- <input type="checkbox" id="Checkbox1_1" name="Checkbox1" checktype="c1" value="IOS" />&nbsp;
+                      <label for="ios">iOS</label> -->
                     </div>
 
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_2" name="Checkbox1" checktype="c1" value="Android" />&nbsp;
-                      <label for="ios">Android</label>
+                    <div class="col">
+                      <label class="check">
+                        Android
+                        <input type="checkbox" id="Checkbox1_2" name="Checkbox1" checktype="c1" value="Android" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <!-- &nbsp;
+                      <label for="ios">Android</label> -->
                     </div>
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_3" name="Checkbox1" checktype="c1" value="UI&#x2f;UX" />&nbsp;
-                      <label for="ios">UI/UX</label>
+                    <div class="col">
+                      <label class="check">
+                        UI/UX
+                        <input type="checkbox" id="Checkbox1_3" name="Checkbox1" checktype="c1" value="UI&#x2f;UX" />
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                   </div>
 
                   <div class="row">
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_4" name="Checkbox1" checktype="c1" value="Web&#x20;CMS" />&nbsp;
-                      <label for="ios">Web CMS</label>
+                    <div class="col">
+                      <label class="check">
+                        Web CMS
+                        <input type="checkbox" id="Checkbox1_4" name="Checkbox1" checktype="c1" value="Web&#x20;CMS" />&nbsp;
+                        <span class="checkmark"></span>
+                      </label>
+
                     </div>
 
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_5" name="Checkbox1" checktype="c1" value="Back-end&#x20;and&#x20;APIs" />&nbsp;
-                      <label for="ios">Backend and APIs</label>
+                    <div class="col">
+                      <label class="check">Backend and APIs
+                        <input type="checkbox" id="Checkbox1_5" name="Checkbox1" checktype="c1" value="Back-end&#x20;and&#x20;APIs" />&nbsp;
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
-                    <div class="col-md-4">
-                      <input type="checkbox" id="Checkbox1_6" name="Checkbox1" checktype="c1" value="Product&#x20;Strategy" />&nbsp;
-                      <label for="ios">Product Strategy</label>
+                    <div class="col">
+                      <label class="check">
+                        Product Strategy
+                        <input type="checkbox" id="Checkbox1_6" name="Checkbox1" checktype="c1" value="Product&#x20;Strategy" />&nbsp;
+                        <span class="checkmark"></span>
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row mt-4">
-                <div class="col-md-6">
-                  <label>What type of service are you interested in <em>*</em></label>
+              <div class="form-group row">
+                <label for="serviceType" class="col-sm-3 col-form-label">Type of Service
+                  <p class="text-muted">What best describes the service you want</p>
+                </label>
+                <div class="col-sm-4">
                   <select name="Radio1" class="form-control" type="text" required>
                     <option>-Select-</option>
                     <option value="Prototype">Prototype</option>
@@ -220,8 +229,13 @@
                   </select>
                   <p id="Radio1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
-                <div class="col-md-6">
-                  <label>Your Budget <em>*</em></label>
+              </div>
+
+
+              <div class="form-group row">
+                <label for="budget" class="col-sm-3">Budget <p class="text-muted">How much is your budget for the project</p></label>
+
+                <div class="col-sm-4">
                   <select name="Radio" class="form-control" type="text" required>
                     <option>-Select-</option>
                     <option value="&#x24;50k&#x20;or&#x20;more">$50k or more</option>
@@ -234,46 +248,47 @@
                 </div>
               </div>
 
+              <div class="form-group row">
+                <label for="summary" class="col-sm-3">Project Summary</label>
+                <div class="col-sm-6">
+                  <textarea name="MultiLine" checktype="c1" maxlength="65535" class="form-control" placeholder="Tell us about this project?" required>
 
-
-              <div class="row mt-4">
-                <div class="col-md-6">
-                  <label>Start Date</label>
-                  <input type="text" name="Date" class="form-control" placeholder="01-January-2019" required>
-                  <span class="muted text-muted">when do you plan to start development</span>
-                  <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                </div>
-                <div class="col-md-6">
-                  <label>End Date</label>
-                  <input type="text" name="Date1" class="form-control" placeholder="01-January-2019" required>
-                  <span class="muted text-muted">When do you plan to launch?</span>
-                  <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
-                </div>
-              </div>
-
-
-              <div class="row mt-4">
-                <div class="col-12">
-                  <label>Project Summary <em>*</em></label>
-                </div>
-
-                <div class="col-md-6">
-                  <textarea name="MultiLine" checktype="c1" maxlength="65535" class="form-control" required>
-
-                                      </textarea>
-                  <span class="text-muted">Tell us a few things about your project</span>
+                  </textarea>
                   <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
 
-              <div class="row mt-5">
-                <div class="container text-center">
-                  <input id="submit" type="submit" class="btn btn-sprinthub btn-flat bg-primary" value="Submit">
-                </div>
+              <div class="form-group row">
+                <label for="start" class="col-sm-3">Starting Point
+                  <p class="text-muted">When do you plan to start this project</p>
+                </label>
 
+                <div class="col-sm-4">
+                  <input type="text" name="Date" class="form-control" placeholder="01-January-2019" required>
+                  <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                </div>
+              </div>
+
+
+              <div class="form-group row">
+                <label for="end" class="col-sm-3">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
+                <div class="col-sm-4">
+                  <input type="text" name="Date1" class="form-control" placeholder="01-January-2019" required>
+                  <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mt-5 mb-5">
+                <div class="container text-center">
+                  <input id="submit" type="submit" class="btn btn-round btn-sprinthub-blue btn-large" value="Send" style="color: #FFFFFF;">
+                </div>
+              </div>
             </form>
 
           </div>
+
 
         </div>
 
@@ -281,10 +296,10 @@
 
 
     </div>
-    </div>
-  </section> <!-- Footer -->
+  </section>
 
 
+  <!-- Footer -->
   <footer class="bg-primary p-3 pt-5">
     <div class="container">
       <div class="row mb-3">

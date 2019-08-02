@@ -229,6 +229,19 @@ a.btn-sprinthub {
 	padding: 15px 25px;
 }
 
+
+.btn-round {
+	border-radius: 4px;
+}
+
+.btn-large {
+	width: 189px !important;
+	height: 56px !important;
+	padding: 15px 67px !important;
+	color: #FFFFFF !important;
+}
+
+
 .dark-blue-title {
 	color: #031B4E;
 	font-weight: 900;
@@ -358,7 +371,7 @@ em {
 .btn-sprinthub-blue {
 	background: #2D3A93 !important;
 	border-radius: 6px;
-	color: #F2BC22 !important;
+	color: #F2BC22;
 	padding: 10px 20px 10px 20px;
 	height: 48px;
 	width: auto;
@@ -1302,9 +1315,96 @@ h1.content-header {
 
 input[type='text'],
 input[type='email'],
-input[type='tel'] {
+input[type='tel'],
+select.form-control {
 	border: 1px solid #0015AD;
 	box-sizing: border-box;
 	border-radius: 4px;
 	height: 45px;
+}
+
+textarea.form-control {
+	border: 1px solid #0015AD;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+	background-color: #E5E8F8;
+}
+
+.txt-primary {
+	color: #031B4E;
+}
+
+
+/* CHECKBOX */
+/* The container */
+.check {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.check input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+}
+
+
+
+/* On mouse-over, add a grey background color */
+/* .check:hover input~.checkmark {
+	background-color: var(--sprinthub-primary);
+} */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+	background-color: var(--sprinthub-primary-2);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked~.checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
