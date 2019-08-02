@@ -1373,12 +1373,6 @@ textarea.form-control {
 }
 
 
-
-/* On mouse-over, add a grey background color */
-/* .check:hover input~.checkmark {
-	background-color: var(--sprinthub-primary);
-} */
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked~.checkmark {
 	background-color: var(--sprinthub-primary-2);
