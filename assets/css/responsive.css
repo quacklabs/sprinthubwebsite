@@ -339,6 +339,13 @@
     display: inline-block;
   }
 
+  .contact-banner div {
+    min-height: 100px;
+  }
+
+  .contact-img {
+    min-height: 100px;
+  }
 
   .sub-group {
     width: calc(100%);

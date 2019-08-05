@@ -1409,3 +1409,36 @@ textarea.form-control {
 
 	/* padding-left: 30px; */
 }
+
+.select {
+	background: url(../img/arrow-down.png) no-repeat scroll calc(100% - 10px) 8px;
+	backface-visibility: visible;
+}
+
+.contact-img-wrap {
+
+	padding-top: 90px;
+	margin: 0em -2em;
+}
+
+.contact-banner {
+	background-image: url(../img/home-bg.png);
+	background-position: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-top: 5em;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.contact-img {
+	/* background-image: url(../img/artwork.svg); */
+	/* background-position: center;
+	background-repeat: no-repeat; */
+	min-height: 300px;
+	display: block;
+	/*2background-size: cover; */
+}
