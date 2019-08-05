@@ -1317,14 +1317,14 @@ input[type='text'],
 input[type='email'],
 input[type='tel'],
 select.form-control {
-	border: 1px solid #0015AD;
+	border: 1px solid #B6BECF;
 	box-sizing: border-box;
 	border-radius: 4px;
 	height: 45px;
 }
 
 textarea.form-control {
-	border: 1px solid #0015AD;
+	border: 1px solid #B6BECF;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
@@ -1375,7 +1375,7 @@ textarea.form-control {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked~.checkmark {
-	background-color: var(--sprinthub-primary-2);
+	background-color: #0015AD;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
