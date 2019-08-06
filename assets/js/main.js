@@ -69,7 +69,10 @@ var formatDate = (date) => {
 
 
   var day = splitDate[0]
-  var monthIndex = Number(splitDate[1] - 1)
+  var month = splitDate[1]
+  var monthIndex = Number(month) - 1
+  console.log(monthIndex)
+  console.log(monthNames[monthIndex])
   var year = splitDate[2];
 
   return day + '-' + monthNames[monthIndex] + '-' + year;

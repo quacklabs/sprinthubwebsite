@@ -339,6 +339,10 @@
     display: inline-block;
   }
 
+  .check {
+    font-size: .5rem
+  }
+
   .contact-banner div {
     min-height: 100px;
   }

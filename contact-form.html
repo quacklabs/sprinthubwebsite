@@ -374,7 +374,7 @@
         separateDialCode: true,
         utilScript: "./assets/js/utils.js",
         geoIpLookup: function (success, failure) {
-          $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+          $.get("https://ipinfo.io", function () { }, "json").always(function (resp) {
             var countryCode = (resp && resp.country) ? resp.country : "";
             success(countryCode);
           });
