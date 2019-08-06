@@ -105,8 +105,8 @@
 
               </div>
               <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-3 col-form-label">Full Name</label>
-                <div class="col-sm-9">
+                <label for="inputEmail3" class="col-sm-3 col-lg-4 col-form-label">Full Name</label>
+                <div class="col-sm-9 col-lg-8">
                   <div class="row">
                     <div class="col-md-6 col-sm-4 mb-2">
                       <input type="text" class="col form-control" name="Name_First" placeholder="First Name" required>
@@ -124,7 +124,7 @@
 
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-3 col-form-label">Email <em>*</em></label>
+                <label for="Email" class="col-sm-3 col-lg-4 col-form-label">Email <em>*</em></label>
                 <div class="col-sm-5">
                   <input name="Email" type="email" class="form-control" placeholder="name@example.com" required>
                   <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -133,8 +133,8 @@
 
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-3 col-form-label">Phone Number <em>*</em></label>
-                <div class="col-sm-5">
+                <label for="Email" class="col-sm-3 col-lg-4 col-form-label">Phone Number <em>*</em></label>
+                <div class="col-sm-5 col-lg-5">
                   <input type="hidden" name="PhoneNumber_countrycodeval" id="dialCode" value="" />
                   <input name="PhoneNumber_countrycode" id="phone" type="text" class="form-control" required>
                   <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
@@ -142,8 +142,8 @@
               </div>
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-3 col-form-label">Business Name<em>*</em></label>
-                <div class="col-sm-6">
+                <label for="Email" class="col-sm-3 col-lg-4 col-form-label">Business Name<em>*</em></label>
+                <div class="col-sm-6 col-lg-8">
                   <input name="SingleLine" type="text" class="form-control" required>
                   <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
@@ -157,10 +157,10 @@
               </div>
 
               <div class="form-group row">
-                <label for="Email" class="col-sm-3 col-form-label">Service<em>*</em>
+                <label for="Email" class="col-sm-3 col-lg-4 col-form-label">Service<em>*</em>
                   <p class="text-muted">What service are you interested in</p>
                 </label>
-                <div class="col-sm-8">
+                <div class="col-sm-8 col-lg-8">
                   <div class="row">
                     <div class="col">
                       <label class="check">iOS
@@ -217,12 +217,12 @@
               </div>
               <!-- SERVICE -->
               <div class="form-group row">
-                <label for="serviceType" class="col-sm-3 col-form-label">Type of Service
+                <label for="serviceType" class="col-sm-3 col-lg-4 col-form-label">Type of Service
                   <p class="text-muted">What best describes the service you want</p>
                 </label>
-                <div class="col-sm-4">
-                  <select name="Radio1" class="form-control" type="text" required>
-                    <option>-Select-</option>
+                <div class="col-sm-4 col-lg-4">
+                  <select name="Radio1" class="form-control" type="text" class="select" required>
+                    <option>--- Select ---</option>
                     <option value="Prototype">Prototype</option>
                     <option value="Minimum&#x20;Viable&#x20;Product">Minimum Viable Product</option>
                     <option value="Improving&#x20;an&#x20;existing&#x20;solution">Improving an existing solution</option>
@@ -234,11 +234,11 @@
 
               <!-- BUDGET -->
               <div class="form-group row">
-                <label for="budget" class="col-sm-3">Budget <p class="text-muted">How much is your budget for the project</p></label>
+                <label for="budget" class="col-sm-3 col-lg-4">Budget <p class="text-muted">How much is your budget for the project</p></label>
 
-                <div class="col-sm-4">
-                  <select name="Radio" class="form-control" type="text" required>
-                    <option>-Select-</option>
+                <div class="col-sm-4 col-lg-4">
+                  <select name="Radio" class="form-control" type="text" class="select" required>
+                    <option class="text-muted">----Select----- <i class="ml-auto fa fa-down"></i></option>
                     <option value="&#x24;50k&#x20;or&#x20;more">$50k or more</option>
                     <option value="&#x24;25k&#x20;to&#x20;&#x24;50k">$25k to $50k</option>
                     <option value="&#x24;10k&#x20;to&#x20;&#x24;25k">$10k to $25k</option>
@@ -252,8 +252,8 @@
 
               <!-- SUMMARY -->
               <div class="form-group row">
-                <label for="summary" class="col-sm-3">Project Summary</label>
-                <div class="col-sm-6">
+                <label for="summary" class="col-sm-3 col-lg-4">Project Summary</label>
+                <div class="col-sm-6 col-lg-6">
                   <textarea name="MultiLine" checktype="c1" maxlength="65535" class="form-control" placeholder="Tell us about this project?" required>
 
                   </textarea>
@@ -262,11 +262,11 @@
               </div>
               <!-- DATE -->
               <div class="form-group row">
-                <label for="start" class="col-sm-3">Starting Point
+                <label for="start" class="col-sm-3 col-lg-4">Starting Point
                   <p class="text-muted">When do you plan to start this project</p>
                 </label>
 
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-lg-4">
                   <input type="text" name="Date" class="form-control start datepicker" placeholder="01-January-2019" required>
                   <p id="Date_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
@@ -274,8 +274,8 @@
 
 
               <div class="form-group row">
-                <label for="end" class="col-sm-3">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
-                <div class="col-sm-4">
+                <label for="end" class="col-sm-3 col-lg-4">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
+                <div class="col-sm-4 col-lg-4">
                   <input type="text" name="Date1" class="form-control end datepicker" placeholder="01-January-2019" required>
                   <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
@@ -370,7 +370,7 @@
       var init = () => ($("#phone").intlTelInput({
         dropdownContainer: document.body,
         autoHideDialCode: true,
-        initialCountry: "",
+        initialCountry: "auto",
         separateDialCode: true,
         utilScript: "./assets/js/utils.js",
         geoIpLookup: function (success, failure) {

@@ -1317,14 +1317,23 @@ input[type='text'],
 input[type='email'],
 input[type='tel'],
 select.form-control {
-	border: 1px solid #0015AD;
+	border: 1px solid #B6BECF;
 	box-sizing: border-box;
 	border-radius: 4px;
 	height: 45px;
+	color: #B6BECF;
+	;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+select.form-control:focus {
+	border: 1px solid var(--sprinthub-primary-2);
 }
 
 textarea.form-control {
-	border: 1px solid #0015AD;
+	border: 1px solid #B6BECF;
 	box-sizing: border-box;
 	border-radius: 4px;
 }
@@ -1375,7 +1384,7 @@ textarea.form-control {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked~.checkmark {
-	background-color: var(--sprinthub-primary-2);
+	background-color: #0015AD;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -1408,4 +1417,37 @@ textarea.form-control {
 	backface-visibility: visible;
 
 	/* padding-left: 30px; */
+}
+
+.select {
+	background: url(../img/arrow-down.png) no-repeat scroll calc(100% - 10px) 8px;
+	backface-visibility: visible;
+}
+
+.contact-img-wrap {
+
+	padding-top: 90px;
+	margin: 0em -2em;
+}
+
+.contact-banner {
+	background-image: url(../img/home-bg.png);
+	background-position: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-top: 5em;
+	padding-left: 0;
+	padding-right: 0;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.contact-img {
+	/* background-image: url(../img/artwork.svg); */
+	/* background-position: center;
+	background-repeat: no-repeat; */
+	min-height: 300px;
+	display: block;
+	/*2background-size: cover; */
 }
