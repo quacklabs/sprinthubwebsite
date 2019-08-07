@@ -65,14 +65,10 @@ var formatDate = (date) => {
   ];
 
   var splitDate = date.split("/");
-  console.log(splitDate);
 
-
-  var day = splitDate[0]
-  var month = splitDate[1]
+  var day = splitDate[1]
+  var month = splitDate[0]
   var monthIndex = Number(month) - 1
-  console.log(monthIndex)
-  console.log(monthNames[monthIndex])
   var year = splitDate[2];
 
   return day + '-' + monthNames[monthIndex] + '-' + year;
