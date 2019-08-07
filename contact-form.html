@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./assets/css/js-datepicker.css">
+  <link rel="stylesheet" href="./assets/css/datepicker.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" type="text/css" href="./assets/css/intlTelInput.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
@@ -276,7 +276,7 @@
               <div class="form-group row">
                 <label for="end" class="col-sm-3 col-lg-4">Finishing Point <p class="text-muted">When do you plan to start this project</p></label>
                 <div class="col-sm-4 col-lg-4">
-                  <input type="text" name="Date1" class="form-control end datepicker" placeholder="01-January-2019" required>
+                  <input type="text" name="Date1" class="form-control end datepicker" placeholder="01-January-2019" disabled required>
                   <p id="Date1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                 </div>
               </div>
@@ -384,46 +384,32 @@
 
       init()
 
-
-      const start = datepicker('.start', {
-        id: 1,
-        onSelect: (instance, date) => {
-          // Both instances will be set because they are linked by `id`.
-          instance.setMin(date)
-        },
-        minDate: new Date(),
-        formatter: (input, date, instance) => {
-          const value = formatDate(date.toLocaleDateString())
-          input.value = value // => '1/1/2099'
-        }
+      $('.start').datepicker({
+        autoclose: true,
+        startDate: new Date,
+      }).on("changeDate", function (e) {
+        var end = $('.end');
+        var dates = e.date
+        end.attr('disabled', false)
+        end.datepicker({ autoclose: true, startDate: new Date(dates) })
+        end.datepicker('update', new Date(dates))
+      }).on('hide', function (e) {
+        this.value = formatDate(this.value)
       })
 
-      const end = datepicker('.end', {
-        id: 1,
-        onSelect: (instance, date) => {
-          // Both instances will be set because they are linked by `id`.
-          instance.setMax(date)
-        },
-        minDate: new Date(),
-        formatter: (input, date, instance) => {
-          const value = formatDate(date.toLocaleDateString())
-          input.value = value // => '1/1/2099'
-        }
+      $('.end').change(function (e) {
+        this.value = formatDate(this.value)
+      }).on('hide', function () {
+        this.value = formatDate(this.value)
       })
-
-
 
 
 
       $("#submit").click(function (e) {
-        //e.preventDefault()
-        var dialCode = $(".iti__selected-dial-code").html()// $("#dialCode").val()
-        //dialCode = dialCode.substr(1, dialCode.length - 1)
+        var dialCode = $(".iti__selected-dial-code").html()
         $("#dialCode").val("+" + dialCode);
-        console.log("dialcode: " + dialCode);
 
         $("#form").submit();
-        console.log("submitted");
       })
     })
   </script>

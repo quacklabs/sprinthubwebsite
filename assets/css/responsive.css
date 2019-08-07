@@ -340,7 +340,8 @@
   }
 
   .check {
-    font-size: .5rem
+    font-size: .9rem;
+    display: inline-flex;
   }
 
   .contact-banner div {
