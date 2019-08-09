@@ -205,6 +205,18 @@
 
 /* VERY SMALL SCREENS */
 @media(max-width: 321px) {
+  .txt {
+    font-size: 16px !important;
+    line-height: 28px;
+  }
+
+  .about {
+    padding-left: 0px !important;
+  }
+
+  .about .img-fluid {
+    border-radius: 0px;
+  }
 
   .navbar-nav .nav-item,
   .navbar-nav .nav-item>a {
@@ -245,6 +257,36 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+  }
+
+
+  .img-team {
+    text-align: center;
+    max-height: 120px !important;
+    max-width: 120px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  .img-team>.team-link {
+    position: absolute;
+    left: 60%;
+    /* right: auto; */
+    top: 35.5% !important;
+    bottom: 0%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #2D3A93;
+    padding: 7px;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+
+  .inline-link {
+    font-size: 20px;
+    display: inline;
   }
 
 }
@@ -339,9 +381,36 @@
     display: inline-block;
   }
 
+  .about {
+    padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px
+  }
+
+  .sm-center {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .title-fluid {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 49px;
+    color: #031B4E;
+  }
+
   .check {
     font-size: .9rem;
     display: inline-flex;
+  }
+
+  .img-team {
+    text-align: center;
+    max-height: 150px;
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contact-banner div {
@@ -477,6 +546,35 @@
     text-align: center;
   }
 
+
+  .img-team>.team-link {
+    position: absolute;
+    left: 60%;
+    /* right: auto; */
+    top: 43.5%;
+    bottom: 0%;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    background: #2D3A93;
+    padding: 8.2px;
+    color: #FFFFFF;
+    font-size: 21px;
+  }
+
+  .inline-link {
+    font-size: 20px;
+  }
+
+  .txt {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .about .img-fluid {
+    border-radius: 0px;
+  }
+
 }
 
 
@@ -528,6 +626,11 @@
 
   .nav-link {
     margin-right: 10px;
+  }
+
+  .md-center {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
