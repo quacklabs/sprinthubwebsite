@@ -1565,6 +1565,7 @@ img {
 .txt {
 	font-size: 20px;
 	line-height: 34px;
+	color: #666E7D;
 }
 
 .about {
@@ -1573,6 +1574,41 @@ img {
 	padding-bottom: 91px;
 	padding-left: 61px;
 	overflow-x: hidden;
+}
+
+section.about-wrap {
+	margin-top: -200px;
+	border-bottom: 1px solid #C0C5E8;
+	overflow-x: hidden;
+}
+
+.about-head {
+	height: 527px;
+	width: 100%;
+
+}
+
+.about-head .col-6 {
+	padding: 0px;
+}
+
+
+
+.img-2 img,
+.img-1 img {
+	height: 100%;
+	border-radius: 10px;
+}
+
+.img-1 {
+	padding-left: 30px;
+	width: 560px;
+}
+
+.img-2 {
+	margin-left: auto;
+	max-width: 376px;
+	max-height: 436px;
 }
 
 .about .img-fluid {
@@ -1585,4 +1621,10 @@ img {
 	margin: auto;
 	padding-top: auto;
 	padding-bottom: auto;
+}
+
+.abt-start-img {}
+
+.justified {
+	text-align: justify;
 }
