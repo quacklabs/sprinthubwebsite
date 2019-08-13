@@ -258,7 +258,7 @@
   .career-testimonial>div:nth-child(2) .txt {
     font-weight: 800;
     font-size: 16px;
-    line-height: 34px;
+    line-height: 24px;
     color: #FFFFFF;
   }
 
@@ -871,8 +871,8 @@
   }
 
   .benefit {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 }
 
