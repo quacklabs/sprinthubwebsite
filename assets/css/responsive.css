@@ -815,7 +815,7 @@
   }
 
   .career-img img:nth-child(2) {
-    width: calc(43% - 20px);
+    width: calc(43.7% - 24.8px);
     height: 206px;
     margin-left: 20px;
     position: relative;
@@ -833,7 +833,7 @@
   }
 
   .career-img2 img:nth-child(2) {
-    width: calc(57.3% - 20px);
+    width: calc(57.3% - 24px);
     height: 303px;
     margin-top: 30px;
     margin-left: 20px;
