@@ -1585,6 +1585,7 @@ section.about-wrap {
 .about-head {
 	height: 527px;
 	width: 100%;
+	display: inline;
 
 }
 
