@@ -663,6 +663,12 @@
 }
 
 @media(max-width: 425px) {
+
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-item>a {
+    color: var(--sprinthub-primary);
+  }
+
   .md-hidden {
     display: inline-block;
   }
