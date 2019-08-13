@@ -1677,3 +1677,70 @@ section.about-wrap {
 	margin-left: 24px;
 	position: relative;
 }
+
+.desc {
+	line-height: 36px;
+}
+
+.bottom-border {
+	border-bottom: 1px solid #C0C5E8;
+}
+
+.career-testimonial img {
+	width: 100%;
+	height: 100%;
+}
+
+.txt-white {
+	color: #FFFFFF;
+}
+
+
+.career-testimonial {
+	display: flex;
+}
+
+.career-testimonial>div:nth-child(1) {
+	width: 50%;
+	height: 754px;
+}
+
+.career-testimonial>div:nth-child(2) {
+	width: 50%;
+	height: 754px;
+	background-color: #2D3A93;
+	padding: 90px 50px;
+}
+
+.career-testimonial>div:nth-child(2) .txt {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 62px;
+	color: #FFFFFF;
+}
+
+/* 
+.benefits {
+	display: flex;
+} */
+
+.benefits .row {
+	/* width: 100%; */
+	/* display: flex; */
+}
+
+.benefit {
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.benefit h6 {
+	margin: 0;
+}
+
+.benefit img {
+	height: 36px;
+	width: 36px;
+	margin-right: 16px;
+}
