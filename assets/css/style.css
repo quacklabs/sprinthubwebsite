@@ -1629,3 +1629,51 @@ section.about-wrap {
 .justified {
 	text-align: justify;
 }
+
+
+/* CAREER STYLES */
+.career-img,
+.career-img2 {
+	width: 100%;
+	min-height: 500px;
+	padding: 0;
+	display: inline-flex;
+}
+
+.career-wrap {
+	width: 100%;
+	margin-top: -200px;
+}
+
+.career-img img,
+.career-img2 img {
+	border-radius: 16px;
+}
+
+.career-img img:nth-child(1) {
+	width: calc(63.3%);
+	height: 442px;
+	margin-top: 0;
+}
+
+.career-img img:nth-child(2) {
+	width: calc(36% - 24px);
+	height: 470px;
+	margin-left: 24px;
+	position: relative;
+}
+
+
+.career-img2 img:nth-child(1) {
+	width: calc(43.7%);
+	height: 597px;
+	margin-top: 0;
+}
+
+.career-img2 img:nth-child(2) {
+	width: calc(57.3% - 24px);
+	height: 597px;
+	margin-top: 30px;
+	margin-left: 24px;
+	position: relative;
+}
