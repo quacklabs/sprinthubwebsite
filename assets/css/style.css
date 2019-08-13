@@ -1585,6 +1585,7 @@ section.about-wrap {
 .about-head {
 	height: 527px;
 	width: 100%;
+	display: inline;
 
 }
 
@@ -1603,6 +1604,7 @@ section.about-wrap {
 .img-1 {
 	padding-left: 30px;
 	width: 560px;
+	height: 600px;
 }
 
 .img-2 {
