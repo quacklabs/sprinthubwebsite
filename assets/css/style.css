@@ -1702,12 +1702,12 @@ section.about-wrap {
 
 .career-testimonial>div:nth-child(1) {
 	width: 50%;
-	height: 754px;
+	min-height: 754px;
 }
 
 .career-testimonial>div:nth-child(2) {
 	width: 50%;
-	height: 754px;
+	min-height: 754px;
 	background-color: #2D3A93;
 	padding: 90px 50px;
 }
@@ -1719,15 +1719,6 @@ section.about-wrap {
 	color: #FFFFFF;
 }
 
-/* 
-.benefits {
-	display: flex;
-} */
-
-.benefits .row {
-	/* width: 100%; */
-	/* display: flex; */
-}
 
 .benefit {
 	display: inline-flex;
